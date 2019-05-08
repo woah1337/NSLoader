@@ -1,5 +1,5 @@
 # NSLoader
-I was bored so I decided to just work on a loader for like 2hrs and this is what i came up with.
+NSLoader is a cheat loader for CS:GO
 # Screenshots
 <p align="center">
 <img src="https://raw.githubusercontent.com/woah1337/NSLoader/master/screenshots/1.png">
@@ -8,3 +8,8 @@ I was bored so I decided to just work on a loader for like 2hrs and this is what
 <img src="https://raw.githubusercontent.com/woah1337/NSLoader/master/screenshots/2.png">
 <p>
   
+# Discord
+https://discord.gg/k4UnGHb
+
+# Tutorial
+//later
