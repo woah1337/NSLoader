@@ -4,15 +4,15 @@ using System.Collections.Generic;
 using Microsoft.Win32;
 
 namespace HWIDGrabber
-
+    //this method for getting hwid isnt good, maybe i'll update it in the future
 {
-    class HWDI
+    class HWID
 
     {
         public static string GetMachineGuid()
 
         {
-            string location = @"SOFTWARE\Microsoft\Cryptography";
+            string location = @"SOFTWARE\Microsoft\Cryptography"; 
             string name = "MachineGuid";
     
 

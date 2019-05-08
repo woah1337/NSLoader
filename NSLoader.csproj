@@ -59,12 +59,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="hwid.cs" />
-    <Compile Include="Injection\Helpers.cs" />
-    <Compile Include="Injection\ManualMapInjector.cs" />
-    <Compile Include="Injection\Types\ManagedPtr.cs" />
-    <Compile Include="Injection\Win32\Definitions.cs" />
-    <Compile Include="Injection\Win32\Imports.cs" />
-    <Compile Include="Injection\Win32\PDefinitions.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

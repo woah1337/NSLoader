@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ManualMapInjection.Injection;
 using System.Net;
 using System.IO;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace NSLoader
 
 {
     public partial class Form1 : Form
     {
+        [DllImport("InjectLib.dll", CallingConvention = CallingConvention.Cdecl)]
+        private extern static void Inject(byte[] buf);
+
         public Form1()
         {
             InitializeComponent();
@@ -61,15 +65,59 @@ namespace NSLoader
             wb.Headers.Add(Settings.useragent); // adds useragent for leak protection
             var target = Process.GetProcessesByName("csgo").FirstOrDefault(); // we get the PID for csgo
             byte[] file = wb.DownloadData(dllr); // we download the dll to a byte array, much more secure than saving to the disk unlike most loaders
-          
-            
+            this.Hide();
+            while (Process.GetProcessesByName("csgo").Length == 0) //if csgo isnt started
+            {
+                Thread.Sleep(500); //sleeps for .5 seconds
+            }
+
+            //this is to check if main menu is loaded for auto injection
+            //credits to https://www.unknowncheats.me/forum/1593535-post4.html
+
+            bool Clientdll_Found = false; //initialize client_found with false
+            bool Enginedll_Found = false;//initialize engine_found with false
 
 
-            //Injection, just leave this alone if you are a beginner
-            var injector = new ManualMapInjector(target) { AsyncInjection = true };
-            label2.Text = $"hmodule = 0x{injector.Inject(file).ToInt64():x8}";
+            do
+            {
+                Process[] CheckModules = Process.GetProcessesByName("csgo");
 
-            MessageBox.Show("Injected"); // shows a messagebox saying injected
+                foreach (ProcessModule m in CheckModules[0].Modules) 
+                {
+                    if (m.ModuleName == "client_panorama.dll") //this is to check if client_panorama.dll is loaded
+                    {
+                        Clientdll_Found = true;
+                    }
+                }
+
+            } while (Clientdll_Found == false); //loop while not loaded
+
+
+
+            do
+            {
+                Process[] CheckModules = Process.GetProcessesByName("csgo");
+
+                foreach (ProcessModule m in CheckModules[0].Modules)
+                {
+                    if (m.ModuleName == "engine.dll") //this is to check if engine.dll is loaded
+                    {
+                        Enginedll_Found = true;
+                    }
+                }
+
+            } while (Enginedll_Found == false); //loop while not loaded
+
+
+            if (Clientdll_Found == true && Enginedll_Found == true) //if its loaded
+            {
+                Thread.Sleep(9000); //sleep for 9 seconds
+                Inject(file); //inject the dll
+                Application.Exit(); //close the loader
+            }
+
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) //if picturebox1 is clicked
