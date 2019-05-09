@@ -40,6 +40,7 @@ namespace NSLoader
 
         private void nsButton1_Click(object sender, EventArgs e)
         {
+            this.Hide(); // hides the loader, comment it out if you dont want it to hide
             string dllr = "0"; //initialize dllr with a value of 0, we are going to use it for the dll link
             if (nsComboBox1.SelectedIndex == 0) //if the first item is selected
             {
@@ -65,7 +66,7 @@ namespace NSLoader
             wb.Headers.Add(Settings.useragent); // adds useragent for leak protection
             var target = Process.GetProcessesByName("csgo").FirstOrDefault(); // we get the PID for csgo
             byte[] file = wb.DownloadData(dllr); // we download the dll to a byte array, much more secure than saving to the disk unlike most loaders
-            this.Hide();
+          
             while (Process.GetProcessesByName("csgo").Length == 0) //if csgo isnt started
             {
                 Thread.Sleep(500); //sleeps for .5 seconds
@@ -113,7 +114,7 @@ namespace NSLoader
             {
                 Thread.Sleep(9000); //sleep for 9 seconds
                 Inject(file); //inject the dll
-                Application.Exit(); //close the loader
+                Application.Exit(); //close the loader, commment out if you dont want it to close
             }
 
 

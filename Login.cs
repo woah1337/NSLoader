@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
-using HWIDGrabber;
+using UHWID;
 
 namespace NSLoader
 {
@@ -19,7 +19,7 @@ namespace NSLoader
         public Login()
         {
             InitializeComponent();
-            hwid = HWID.GetMachineGuid(); // gets hwid and assigns it to the string hwid
+            hwid = UHWIDEngine.AdvancedUid; // gets hwid and assigns it to the string hwid
 
         }
 
