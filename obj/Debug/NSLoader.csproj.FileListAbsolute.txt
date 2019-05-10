@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\GitHub\NSLoader\bin\Debug\NSLoader.exe.config
+C:\Users\Admin\Documents\GitHub\NSLoader\bin\Debug\NSLoader.exe
+C:\Users\Admin\Documents\GitHub\NSLoader\bin\Debug\NSLoader.pdb
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.Form1.resources
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.Login.resources
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.exe
+C:\Users\Admin\Documents\GitHub\NSLoader\obj\Debug\NSLoader.pdb

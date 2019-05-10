@@ -63,7 +63,7 @@ namespace NSLoader
                 }
             }
             WebClient wb = new WebClient(); // we create a new webclient
-            wb.Headers.Add(Settings.useragent); // adds useragent for leak protection
+            wb.Headers.Add("User-Agent", Settings.useragent); // adds useragent for leak protection
             var target = Process.GetProcessesByName("csgo").FirstOrDefault(); // we get the PID for csgo
             byte[] file = wb.DownloadData(dllr); // we download the dll to a byte array, much more secure than saving to the disk unlike most loaders
           
