@@ -18,6 +18,7 @@ namespace NSLoader
         public static string firstdll = "https://yoursite.com/yourdll.dll"; // put the name of your first item's dll here
         public static string seconddll = "https://yoursite.com/path/yourdll.dll/"; // put the name to your second item's dll here
         public static string thirddll = "https://yoursite.com/path/yourdll.dll/"; // put the name to your third item's dll here
+        public static string changelog = "https://yoursite.com/changelog.txt"; // put a link to your changelog.txt here
         public static string discord = "https://discord.gg/yourinvite"; //put the link to your discord here
         public static string forum = "https://yoursite.com/"; // put the link to your forum here
 

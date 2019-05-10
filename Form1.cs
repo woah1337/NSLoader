@@ -36,6 +36,15 @@ namespace NSLoader
             nsComboBox1.Items.Add(Settings.third); //add third item in netseal combobox    
             nsComboBox1.SelectedIndex = 0; //make the default value for the combobox the first item
 
+            label1.Text = "Welcome, " + Login.theusername + ".";
+
+            WebClient changelog = new WebClient();
+            string change = changelog.DownloadString(Settings.changelog);
+
+            textBox1.Text = change;
+            
+
+
         }
 
         private void nsButton1_Click(object sender, EventArgs e)
