@@ -13,10 +13,12 @@ https://discord.gg/k4UnGHb
 
 # Tutorial
 (Optional): you can compile BlackBone from source too, select win32 and release to compile, copy the .lib file to the InjectLib folder and rename it to BlackBone.x86.lib<br/>
-(Optional)First compile InjectLib.dll as release x86 (or download from releases if you don't want to compile).
+(Optional)First compile InjectLib.dll as release x86 (or download from releases if you don't want to compile).<br/>
 Edit Settings.cs in the loader.<br/>
 If you get an error while opening a form, compile the loader first, close the form and open the form again (you only need to do this once, this is because of the NetSeal theme.)<br/>
 Compile the loader.<br/>
 Put InjectLib.dll in the same folder as your loader.<br/>
 (Optional): Make an SFX if you want only 1 binary for your loader like loader.exe not loader.exe and InjectLib.dll.<br/>
 Run your loader : )<br/>
+<br/>
+maybe il make a vid tutorial 
