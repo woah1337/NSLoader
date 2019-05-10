@@ -121,7 +121,7 @@ namespace NSLoader
 
             if (Clientdll_Found == true && Enginedll_Found == true) //if its loaded
             {
-                Thread.Sleep(9000); //sleep for 9 seconds
+                Thread.Sleep(2000); //sleep for 2 seconds
                 Inject(file); //inject the dll
                 Application.Exit(); //close the loader, commment out if you dont want it to close
             }
