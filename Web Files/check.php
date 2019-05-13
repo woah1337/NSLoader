@@ -4,7 +4,7 @@ $database = mysqli_select_db($link, "mysql_database");
 
 $user = $_GET['username'];
 $password = $_GET['password'];
-$hwid = $_GET['hwid'];
+$hwid = mysqli_real_escape_string($link, $_GET['hwid']);
 $tables = "mybb_users";
 
 $sql = "SELECT * FROM ". $tables ." WHERE username = '". mysqli_real_escape_string($link,$user) ."'" ;
