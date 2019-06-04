@@ -1,3 +1,5 @@
+//credits to thaisen for this
+//works with mybb
 <?php
 $link = mysqli_connect("localhost", "mysql_username","mysql_password");
 $database = mysqli_select_db($link, "mysql_database");
