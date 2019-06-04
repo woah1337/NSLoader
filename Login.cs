@@ -39,7 +39,7 @@ namespace NSLoader {
 					if (loginstring.Contains("h1")) //if the hwid is correct
 					{
 						var form1 = new Form1(); //variable for new form
-						form1.Closed += (s, args) = >this.Close();
+						form1.Closed += (s, args) =>this.Close();
 						MessageBox.Show("Logged in!"); // messagebox that says logged in
 						form1.Show(); //show new form
 						this.Hide(); //hide current form
