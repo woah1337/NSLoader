@@ -22,3 +22,6 @@ Put InjectLib.dll in the same folder as your loader.<br/>
 Run your loader : )<br/>
 <br/>
 maybe il make a vid tutorial 
+<br/>
+<br/>
+If you're reading this, you've been in a coma for almost 20 years now. We're trying a new technique. We don't know where this message will end up in your dream, but we hope it works. Please wake up, we miss you.
