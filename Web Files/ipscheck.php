@@ -1,5 +1,5 @@
-//credits to SKLabs for this
-//works with invision power suite
+/*credits to SKLabs for this
+works with invision power suite*/
 <?php
 
 $_SERVER['SCRIPT_FILENAME']    = __FILE__;
