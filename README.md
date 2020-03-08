@@ -27,3 +27,6 @@ maybe il make a vid tutorial
 
 # If you're reading this, you've been in a coma for almost 20 years now. We're trying a new technique. We don't know where this message will end up in your dream, but we hope it works. Please wake up, we miss you.<br>
 this is trash that i made when i was learning programming (my first project i think), hf
+
+
+I'm a fucking cheater and have a small penis.
